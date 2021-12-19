@@ -3,21 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{2ABDF9C9-7641-4516-9F75-9C6473349AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "DataStructures\DataStructures.csproj", "{2ABDF9C9-7641-4516-9F75-9C6473349AFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{76B60BCE-6DFB-41B8-867E-3C9DB9791EA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\LinkedList.csproj", "{76B60BCE-6DFB-41B8-867E-3C9DB9791EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{16DE6CA0-DE9A-4FF9-A698-DF4FA419BAD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Stack\Stack.csproj", "{16DE6CA0-DE9A-4FF9-A698-DF4FA419BAD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "Queue\Queue.csproj", "{D58AC087-82E4-45B6-992C-4956D2D77B6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue", "Queue\Queue.csproj", "{D58AC087-82E4-45B6-992C-4956D2D77B6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoublyLinkedList", "DoublyLinkedList\DoublyLinkedList.csproj", "{AA202D4F-E25C-41C0-B19F-FA1502AB0FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoublyLinkedList", "DoublyLinkedList\DoublyLinkedList.csproj", "{AA202D4F-E25C-41C0-B19F-FA1502AB0FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree", "BinaryTree\BinaryTree.csproj", "{C320EB08-7E96-4D0B-8AC8-53E20D22E602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTree", "BinaryTree\BinaryTree.csproj", "{C320EB08-7E96-4D0B-8AC8-53E20D22E602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Set", "Set\Set.csproj", "{1C6D36B2-CF5E-48ED-9C61-B3260B8F2352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Set", "Set\Set.csproj", "{1C6D36B2-CF5E-48ED-9C61-B3260B8F2352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{787625EF-26EA-4D49-ABC8-DE5D4955516D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{787625EF-26EA-4D49-ABC8-DE5D4955516D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matrix", "MatrixAndVector\Matrix.csproj", "{E53345A8-2281-4A39-B6A7-9577F01648B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector", "Vector\Vector.csproj", "{BF1A3A37-58B7-47C3-B065-A681BD616AC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{787625EF-26EA-4D49-ABC8-DE5D4955516D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{787625EF-26EA-4D49-ABC8-DE5D4955516D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{787625EF-26EA-4D49-ABC8-DE5D4955516D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53345A8-2281-4A39-B6A7-9577F01648B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53345A8-2281-4A39-B6A7-9577F01648B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53345A8-2281-4A39-B6A7-9577F01648B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53345A8-2281-4A39-B6A7-9577F01648B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF1A3A37-58B7-47C3-B065-A681BD616AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1A3A37-58B7-47C3-B065-A681BD616AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1A3A37-58B7-47C3-B065-A681BD616AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1A3A37-58B7-47C3-B065-A681BD616AC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Collections
 {
-    public class DoublyLinkedListNode<T>
+    public class DoublyNode<T>
     {
         private T _data = default(T);
 
@@ -22,9 +22,9 @@ namespace DataStructures.Collections
             }
         }
 
-        public DoublyLinkedListNode<T> Previous { get; set; }
-        public DoublyLinkedListNode<T> Next { get; set; }
-        public DoublyLinkedListNode(T data)
+        public DoublyNode<T> Previous { get; set; }
+        public DoublyNode<T> Next { get; set; }
+        public DoublyNode(T data)
         {
             Data = data;
         }

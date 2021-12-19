@@ -1,11 +1,20 @@
-﻿using System;
+﻿using DataStructures.Collections.Matrices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DataStructures.Collections
 {
+    public enum SpecialMatrix 
+    {
+        Diagonal,
+        Unit,
+        RandomUnit
+    }
+
     public class Matrix : ICloneable, IEnumerable<double>
     {
         private double[,] _matrix;
@@ -36,6 +45,16 @@ namespace DataStructures.Collections
         /// Количество столбцов матрицы
         /// </summary>
         public int ColumnCount { get => _columnCount; }
+        public bool IsSymetric 
+        { 
+            get
+            {
+                if (RowCount == ColumnCount)
+                    return true;
+                return false;
+            }
+        }
+
 
         /// <summary>
         /// Индексатор. Позволяет получить элемент матрицы по строке и столбцу 
@@ -137,13 +156,31 @@ namespace DataStructures.Collections
 
             return result;
         }
+        public static Matrix Create(int x, int y, SpecialMatrix type)
+        {
+            switch (type)
+            {
+                case SpecialMatrix.Diagonal:
+                    return null;
+                case SpecialMatrix.Unit:
+                    return new UnitMatrix(x,y).Values;
+                case SpecialMatrix.RandomUnit:
+                    var newMatrix = new Matrix(x, y);
+                    var random = new Random();
+                    newMatrix.ArrayRound((i, j) => newMatrix[i, j] = random.Next(0, 40));
+                    return newMatrix;
+                default:
+                    break;
+            }
+            return null;
+        }
         public object Clone()
         {
             var oldData = new Matrix(RowCount, ColumnCount);
             oldData.ArrayRound((i, j) => oldData._matrix[i, j] = this._matrix[i, j]);
             return oldData;
         }
-        private void ArrayRound(Action<int, int> operation)
+        internal void ArrayRound(Action<int, int> operation)
         {
             for (int i = 0; i < this.RowCount; i++)
             {

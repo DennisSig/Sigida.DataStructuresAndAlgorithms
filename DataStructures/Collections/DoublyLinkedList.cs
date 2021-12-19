@@ -28,11 +28,11 @@ namespace DataStructures.Collections
         /// <summary>
         /// Первый элемент структуры
         /// </summary>
-        public DoublyLinkedListNode<T> Front { get; private set; }
+        public DoublyNode<T> Front { get; private set; }
         /// <summary>
         /// Последний элемент структуры
         /// </summary>
-        public DoublyLinkedListNode<T> End { get; private set; }
+        public DoublyNode<T> End { get; private set; }
         /// <summary>
         /// Количество элементов в структуре
         /// </summary>
@@ -61,7 +61,7 @@ namespace DataStructures.Collections
             }
             else
             {
-                var node = new DoublyLinkedListNode<T>(data);
+                var node = new DoublyNode<T>(data);
 
                 node.Previous = End;
                 End.Next = node;
@@ -82,7 +82,7 @@ namespace DataStructures.Collections
             }
             else
             {
-                var node = new DoublyLinkedListNode<T>(data);
+                var node = new DoublyNode<T>(data);
 
                 node.Next = Front;
                 Front.Previous = node;
@@ -170,7 +170,7 @@ namespace DataStructures.Collections
         /// </summary>
         /// <param name="index">Индекс элемента</param>
         /// <returns></returns>
-        public DoublyLinkedListNode<T> FindByIndex(int index)
+        public DoublyNode<T> FindByIndex(int index)
         {
             CheckIndexException(index);
 
@@ -226,7 +226,7 @@ namespace DataStructures.Collections
 
         private void SetFront(T data)
         {
-            var node = new DoublyLinkedListNode<T>(data);
+            var node = new DoublyNode<T>(data);
 
             Front = node;
             End = node;
